@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+body {
+  color: #333;
+}
+
+.my-drawer {
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.my-drawer .am-drawer-sidebar {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.App .chouti .am-navbar {
+  width: 100%;
+  height: 2.13333rem;
+  background-color: #282828;
+}
+.App .chouti .am-navbar .am-navbar-left {
+  padding: 0;
+}
+.App .chouti .am-navbar .am-navbar-left .am-navbar-left-icon {
+  display: none;
+}
+.App .chouti .am-navbar .am-navbar-left .am-navbar-left-content .bar-left {
+  display: inline-block;
+}
+.App .chouti .am-navbar .am-navbar-left .am-navbar-left-content .bar-left .lie {
+  width: 2.048rem;
+  height: 2.13333rem;
+  line-height: 2.13333rem;
+  text-align: center;
+  border-right: 0.04267rem solid #111;
+}
+.App .chouti .am-navbar .am-navbar-left .am-navbar-left-content .bar-left .lie i:before {
+  font-size: 0.85333rem;
+  color: #999;
+}
+.App .chouti .am-navbar .am-navbar-left .am-navbar-left-content .bar-left .bar-name {
+  height: 2.13333rem;
+  line-height: 2.13333rem;
+  font-size: 0.59733rem;
+  padding-left: 0.59733rem;
+  color: #efefef;
+}
+.App .chouti .am-navbar .am-navbar-right {
+  margin-right: 0;
+}
+.App .chouti .am-navbar .am-navbar-right .bar-right span {
+  color: #999;
+  font-size: 0.64rem;
+}
+.App .chouti .am-navbar .am-navbar-right .bar-right .yi {
+  color: #999;
+  font-size: 0.59733rem;
+}
+.App .chouti .am-navbar .am-navbar-right .bar-right .er {
+  text-align: center;
+  display: inline-block;
+  width: 2.048rem;
+  color: #999;
+  font-size: 0.68267rem;
+}
+.App .chouti .my-drawer .am-drawer-sidebar {
+  width: 70%;
+  line-height: 2.13333rem;
+  background-color: #282828;
+}
+.App .chouti .my-drawer .am-drawer-sidebar .am-list {
+  width: 100%;
+  line-height: 2.13333rem;
+}
+.App .chouti .my-drawer .am-drawer-sidebar .am-list .am-list-body {
+  line-height: 2.13333rem;
+  background-color: #282828;
+}
+.App .chouti .my-drawer .am-drawer-sidebar .am-list .am-list-body .am-list-item {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-bottom: 1px dotted #333;
+  width: 100%;
+  padding: 0 0.68267rem;
+  height: 2.13333rem;
+  line-height: 2.13333rem;
+  background-color: #282828;
+}
+.App .chouti .my-drawer .am-drawer-sidebar .am-list .am-list-body .am-list-item .am-list-line:after {
+  display: block;
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  width: 100%;
+  border: 0;
+}
+.App .chouti .my-drawer .am-drawer-sidebar .am-list .am-list-body .am-list-item .am-list-content {
+  font-size: 0.59733rem;
+  color: #9a9a9a;
+}
+.App nav .swiper-box {
+  width: 100%;
+  height: 8.96rem;
+}
+.App nav .swiper-box img {
+  width: 100%;
+}
+.App nav .movie .nowplaying {
+  padding-top: 0.768rem;
+}
+.App nav .movie .nowplaying li {
+  cursor: pointer;
+  margin: 0 0.72533rem 0.72533rem 0.72533rem;
+}
+.App nav .movie .nowplaying li > div {
+  border: 1px solid #999;
+  border-top: 0;
+}
+.App nav .movie .nowplaying li > div .pic img {
+  width: 100%;
+}
+.App nav .movie .nowplaying li > div .desc {
+  height: 2.13333rem;
+}
+.App nav .movie .nowplaying li > div .desc .desc-left {
+  width: 83%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2.13333rem;
+  padding: 0.55467rem 0 0 1.19467rem;
+}
+.App nav .movie .nowplaying li > div .desc .desc-left .file-name {
+  color: #9a9a9a;
+  font-size: 0.512rem;
+  line-height: 0.64rem;
+}
+.App nav .movie .nowplaying li > div .desc .desc-left .counts {
+  line-height: 0.64rem;
+  height: 0.64rem;
+}
+.App nav .movie .nowplaying li > div .desc .desc-left .counts span {
+  vertical-align: top;
+  height: 0.64rem;
+  font-size: 0.512rem;
+  color: #9a9a9a;
+  line-height: 0.64rem;
+}
+.App nav .movie .nowplaying li > div .desc .desc-right {
+  width: 17%;
+}
+.App nav .movie .nowplaying li > div .desc .desc-right span {
+  line-height: 2.13333rem;
+  color: #f78360;
+  display: inline-block;
+  margin-right: 0.64rem;
+  font-size: 0.768rem;
+}
+.App nav .movie .more-button {
+  width: 6.82667rem;
+  height: 1.28rem;
+  border: 0.04267rem solid #aaa;
+  border-radius: 0.64rem;
+  text-align: center;
+  line-height: 1.28rem;
+  font-size: 0.512rem;
+  color: #616161;
+  cursor: pointer;
+  margin: 0.42667rem auto 1.28rem;
+}
+.App nav .movie .more-button a {
+  color: #333;
+}
+.App nav .movie .dividing-line {
+  margin-top: 1.28rem;
+  margin-bottom: 1.28rem;
+}
+.App nav .movie .dividing-line .line {
+  position: relative;
+  top: 0.42667rem;
+  border-bottom: 0.04267rem solid #a8a8a8;
+}
+.App nav .movie .dividing-line .upcoming {
+  width: 2.77333rem;
+  height: 0.85333rem;
+  margin: 0 auto;
+  margin-bottom: -px2rem(10);
+  border-radius: 0.21333rem;
+  font-size: 0.42667rem;
+  line-height: 0.85333rem;
+  text-align: center;
+  color: #eee;
+  background-color: #a7a7a7;
+}
+.App nav .movie .comingsoon {
+  padding-top: 0.768rem;
+}
+.App nav .movie .comingsoon li {
+  margin: 0 0.72533rem 0.72533rem 0.72533rem;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0.02133rem 0.02133rem 0.04267rem #a8a8a8;
+          box-shadow: 0.02133rem 0.02133rem 0.04267rem #a8a8a8;
+  cursor: pointer;
+}
+.App nav .movie .comingsoon li .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+.App nav .movie .comingsoon li .detail {
+  height: 1.49333rem;
+  margin: 0 -px2rem(15);
+}
+.App nav .movie .comingsoon li .detail .de-left {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 1.49333rem;
+  padding-top: 0.42667rem;
+  padding-left: 1.19467rem;
+  width: 58%;
+}
+.App nav .movie .comingsoon li .detail .de-left .file-name {
+  color: #333;
+  font-size: 0.512rem;
+  line-height: 0.64rem;
+}
+.App nav .movie .comingsoon li .detail .de-right {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 41%;
+}
+.App nav .movie .comingsoon li .detail .de-right .show-date {
+  display: inline-block;
+  font-size: 0.512rem;
+  color: #f5a27d;
+  line-height: 0.64rem;
+  height: 1.49333rem;
+  padding-top: 0.42667rem;
+  padding-left: 1.19467rem;
+}
+.App #tablist {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 0.64rem;
+  padding-right: 0.64rem;
+  background-color: #f9f9f9;
+}
+.App #tablist .am-tabs-top {
+  width: 100%;
+}
+.App #tablist .am-tabs-top .am-tabs-bar .am-tabs-ink-bar {
+  height: 0.17067rem;
+  background-color: #fe6e00;
+}
+.App #tablist .am-tabs-top .am-tabs-bar .am-tabs-tab {
+  height: 1.92rem;
+  line-height: 1.92rem;
+  font-size: 0.68267rem;
+  color: #616161;
+}
+.App #tablist .am-tabs-top .am-tabs-bar .am-tabs-tab-active {
+  color: #fe6e00;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item {
+  width: 100%;
+  padding: 0.85333rem 0;
+  border-bottom: dashed 0.04267rem #c9c9c9;
+  cursor: pointer;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item div {
+  display: inline-block;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-img img {
+  width: 2.56rem;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc {
+  padding-left: 0.64rem;
+  width: 75%;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-name {
+  font-size: 0.68267rem;
+  line-height: 1.36533rem;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-grade {
+  line-height: 1.36533rem;
+  font-size: 0.68267rem;
+  color: #fe6e00;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-grade span {
+  color: #8e8e8e;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-intro {
+  line-height: 1.024rem;
+  height: 1.024rem;
+  color: #8e8e8e;
+  font-size: 0.512rem;
+  width: 100%;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-counts {
+  font-size: 0.512rem;
+  color: #8e8e8e;
+  line-height: 1.024rem;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-counts .font-color {
+  color: blue;
+}
+.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-date {
+  color: #ffb375;
+  font-size: 0.512rem;
+  line-height: 1.024rem;
+}
+.App .film-detail .film-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+.App .film-detail .film-intro {
+  color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.App .film-detail .film-intro .samediv {
+  font-size: 0.512rem;
+  height: 0.768rem;
+  overflow: hidden;
+  margin-bottom: 0.42667rem;
+  padding-left: 0.85333rem;
+  line-height: 0.768rem;
+}
+.App .film-detail .film-intro .filmsyno {
+  margin: 0.68267rem auto;
+  border-left: 0.68267rem solid #e4c89c;
+  font-size: 0.59733rem;
+  padding-left: 0.17067rem;
+}
+.App .film-detail .film-intro .word {
+  text-overflow: ellipsis;
+  margin-bottom: 3.41333rem;
+  padding-left: 0.85333rem;
+  padding-right: 0.85333rem;
+  height: 100%;
+}
+.App .cinemas .am-accordion-item {
+  cursor: pointer;
+}
+.App .cinemas .am-accordion-item .am-accordion-header {
+  font-size: 0.59733rem;
+  padding-left: 0.59733rem;
+  background: #e1e1e1;
+  margin-bottom: 0.04267rem;
+  height: 1.70667rem;
+  line-height: 1.70667rem;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item {
+  padding: 0;
+  margin: 0 auto;
+  border-bottom: 0.04267rem solid #e1e1e1;
+  cursor: pointer;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line {
+  border-radius: 0.21333rem;
+  padding: 0.42667rem 0 0.512rem 0.68267rem;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .cinema-name {
+  display: inline-block;
+  width: 80%;
+  font-size: 0.68267rem;
+  margin-bottom: 0.21333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .cinema-name span {
+  display: inline-block;
+  font-size: 0.42667rem;
+  width: 0.768rem;
+  text-align: center;
+  line-height: 0.768rem;
+  border-radius: 50%;
+  margin-left: 0.128rem;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .cinema-name .zuo {
+  color: #fc8558;
+  border: 1px solid #fc8558;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .cinema-name .tong {
+  color: #88aec8;
+  border: 1px solid #88aec8;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .jiantou {
+  vertical-align: top;
+  position: absolute;
+  top: 0.64rem;
+  right: 1.28rem;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .jiantou i:before {
+  font-size: 0.68267rem;
+  color: #8e8e8e;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .youhui {
+  margin-bottom: 0.21333rem;
+  font-size: 0.512rem;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .youhui span {
+  display: inline-block;
+  border-radius: 0.128rem;
+  padding: 0 0.21333rem;
+  margin: 0 0.21333rem;
+  color: #fff;
+  height: 0.64rem;
+  line-height: 0.64rem;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .youhui .kele {
+  background-color: #51add0;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .youhui .huodong {
+  background-color: #ff9658;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .address {
+  display: inline-block;
+  width: 80%;
+  font-size: 0.512rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ccc;
+}
+.App .cinemas .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-item .am-list-line .am-list-content .cinema-detail .juli {
+  width: 80%;
+  font-size: 0.512rem;
+  color: #ccc;
+}
