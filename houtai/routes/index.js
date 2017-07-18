@@ -115,4 +115,5 @@ router.get('/cinema',function(req, res) {
     })
   })
 })
+
 module.exports = router;
