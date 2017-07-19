@@ -4,8 +4,8 @@ import { createStore } from 'redux';
 import reducer from './reducer';
 
 var state = {
+    tabname: '卖座电影',
     header: {
-        title: '卖座电影',
         localtion: '深圳',
         list: [
             {

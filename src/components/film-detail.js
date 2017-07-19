@@ -51,8 +51,8 @@ class Film_details extends Component {
   }
   componentDidMount() {
     //获取当前页面数据
-    console.log(this);
     var id = this.props.match.params.id;
+    console.log(id);
     // console.log(this.props)
     $.get('http://localhost:8080/film', { id: id }, (data) => {
       var list = JSON.parse(data).data.film;

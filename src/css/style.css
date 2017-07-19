@@ -24,7 +24,8 @@ body {
 }
 
 .my-drawer {
-  position: relative;
+  top: 2.13333rem;
+  position: absolute;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }

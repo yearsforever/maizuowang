@@ -14,27 +14,27 @@ class App1 extends React.Component {
         this.setState({ open: !this.state.open });
     }
     render() {
+        console.log(this.props.header)
         const sidebar = (<List>
-            {this.props.header.list.map((i, index) => {
+             {this.props.header.list.map((i, index) => {
                 return (
-                    <NavLink to='/cinema/' key={index}>
+                    <NavLink to={i.url} key={index}>
                         <List.Item>
-                            {i.name} 
+                            {i.name}
                         </List.Item>
-                    </NavLink> 
+                    </NavLink>
                 );
-            })}
+            })} 
         </List>);
 
         return (
-        // <Router>
             <div className='chouti' >
                 <NavBar leftContent={[
                     <div key='0' className="bar-left">
                         <div className="lie left">
                             <i key='0' className="iconfont icon-liebiao"></i>
                         </div>
-                        <div className='bar-name left' >{this.props.header.title}</div>
+                        <div className='bar-name left' >{this.props.tabname}</div>
                     </div>]} rightContent={[
                         <div key='0' className="bar-right">
                             <span> {this.props.header.localtion} </span>
@@ -48,10 +48,9 @@ class App1 extends React.Component {
                     sidebar={sidebar}
                     open={this.state.open}
                     onOpenChange={this.onOpenChange} >
-                    123
-            </Drawer>
+                    <div>正在努力加载中。。。</div>
+                </Drawer>
             </div>
-        // </Router>
         );
     }
 }
@@ -59,6 +58,7 @@ class App1 extends React.Component {
 var Header = connect(
     (state, ownProps) => {
         return {
+            tabname: state.tabname,
             header: state.header
         }
     }

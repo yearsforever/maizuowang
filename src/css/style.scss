@@ -19,7 +19,8 @@ body{
     color: #333;
 }
 .my-drawer {
-  position: relative;
+    top: px2rem(50);
+  position: absolute;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
