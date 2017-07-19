@@ -17,7 +17,6 @@ class TabExample extends Component {
         var page = this.props.page ? this.props.page : '1';
         return (
             <div id='tablist' >
-                {/* {console.log(page)}  */}
                 <Tabs activeKey={page} defaultActiveKey='1' animated={false} swipeable >
                     <TabPane tab="正在热映" key="1" >
                         <Route path='/film/' component={Nowplay} ></Route>
