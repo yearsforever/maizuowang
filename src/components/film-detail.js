@@ -71,7 +71,6 @@ var Film_detail = connect(
   (dispatch, own) => {
     return {
       getFilm: (data) => {
-        // console.log(data);
         dispatch({
           type: 'CHANGE_FILM',
           filmdetail: data,

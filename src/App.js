@@ -11,6 +11,7 @@ import Nav from './components/nav';
 import Film from './components/film';
 import Film_detail from './components/film-detail';
 import Cinema from './components/cinema';
+import Mine from './components/regist';
 
 class Apps extends Component {
     render() {
@@ -21,7 +22,7 @@ class Apps extends Component {
                      <Route exact path="/" component={Nav} />
                      <Route  path='/film/:page' component={Film} />  
                      <Route  path='/cinema/' component={Cinema} />
-
+                     <Route  path='/mine/' component={Mine} />
                      <Route  path="/film_detail/:id" component={Film_detail} /> 
                 </div>
             </Router>

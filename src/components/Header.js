@@ -14,11 +14,12 @@ class App1 extends React.Component {
         this.setState({ open: !this.state.open });
     }
     render() {
-        console.log(this.props.header)
+        var that = this;
+        console.log(this)
         const sidebar = (<List>
              {this.props.header.list.map((i, index) => {
                 return (
-                    <NavLink to={i.url} key={index}>
+                    <NavLink to={i.url} key={index} >
                         <List.Item>
                             {i.name}
                         </List.Item>

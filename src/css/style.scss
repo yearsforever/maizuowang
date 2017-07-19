@@ -129,9 +129,17 @@ body{
                     }
                 }
             }
+            .am-drawer-overlay{
+                // z-index: 1;
+                // height: 0;
+            }
+            .am-drawer-content{
+                display: none;
+            }
         }
     }
     nav{
+        z-index: 100;
         .swiper-box{
             width: 100%;
             height: px2rem(210);
@@ -493,6 +501,61 @@ body{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .regist{
+        width: 100%;
+        background-color: #f6f6f6;
+        .regist-box{
+            width: 100%;
+            box-sizing: border-box;
+            form{
+                padding: 0 px2rem(31);
+                .item{
+                    position: relative;
+                    margin-top: px2rem(30);
+                    input{
+                        box-sizing: border-box;
+                        display: block;
+                        width: 100%;
+                        height: px2rem(34);
+                        padding: px2rem(6) px2rem(12);
+                        font-size: px2rem(14);
+                        color: #999;
+                        border: none;
+                        background-color: #f6f6f6;
+                    }
+                    .input-bg{
+                        position: absolute;
+                        top: px2rem(20);
+                        height: px2rem(12);
+                        width: 100%;
+                        border: solid #c4c4c4;
+                        border-width: 0 px2rem(1) px2rem(1) px2rem(1);
+                    }
+                }
+                .loginview{
+                    display: none;
+                }
+                .wrong-msg{
+                    font-size: px2rem(14);
+                    display: block;
+                    height: px2rem(16);
+                    color: #fe8233;
+                    padding-left: px2rem(8);
+                }
+                button{
+                    display: block;
+                    margin: px2rem(45) auto 0;
+                    width: px2rem(163);
+                    background-color: #fe8233;
+                    color: #fff;
+                    border: none;
+                    border-radius: px2rem(36);
+                    padding: px2rem(8) px2rem(12);
+                    font-size: px2rem(15);
                 }
             }
         }

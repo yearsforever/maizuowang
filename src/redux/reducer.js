@@ -26,7 +26,7 @@ function reducer(state, action) {
         case 'CHANGE_FILM':
             return Object.assign({}, state, {
                 filmdetail: action.filmdetail,
-                tabname: action.name
+                // tabname: action.name
             });
          //  影片页面的正在热映数据
         case 'ADD_NOW':
