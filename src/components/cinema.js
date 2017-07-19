@@ -5,6 +5,7 @@ import $ from 'jquery';
 import { Accordion, List } from 'antd-mobile';
 // 引入iconfont
 import '../lib/iconfont/iconfont.css';
+import ScrollLink from './back2top';
 
 class Cinemas extends Component {
   render() {
@@ -35,11 +36,7 @@ class Cinemas extends Component {
             })
           }
         </Accordion>
-        <div className="back-to-top">
-          <div className="circle">
-            <i className="iconfont icon-tubiao102"></i>
-          </div>
-        </div>
+         <ScrollLink />
       </div>
     );
   }

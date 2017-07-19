@@ -38,12 +38,15 @@ class ScrollLink extends Component {
 	render() {
 
 		return (
-			<a
-				onClick={this.scrollToTop}
-				style={this.state.linkStyle}
-			>
-			<i className="iconfont icon-tubiao102"></i>
-			</a>
+			<div className='back-to-top' >
+				<a className='circle'
+					onClick={this.scrollToTop}
+					style={this.state.linkStyle}
+				>
+					<i className="iconfont icon-tubiao102"></i>
+				</a>
+			</div>
+
 		);
 	}
 }

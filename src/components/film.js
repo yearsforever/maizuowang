@@ -26,11 +26,7 @@ class TabExample extends Component {
                     </TabPane>
                 </Tabs>
                 <WhiteSpace />
-                <div className="back-to-top">
-                    <div className="circle">
-                        <i className="iconfont icon-tubiao102"></i>
-                    </div>
-                </div>
+               
                 <ScrollLink />
             </div>
         )

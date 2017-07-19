@@ -6,6 +6,7 @@ import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import $ from 'jquery';
 //引入  swiper
 import '../lib/swiper-3.4.2.min.css';
+import ScrollLink from './back2top';
 import Swiper from 'swiper';
 
 var mySwiper;
@@ -105,11 +106,7 @@ class Navs extends Component {
           </div>
         </div>
         {/* 回到顶部链接 */}
-        <div className="back-to-top">
-          <div className="circle">
-            <i className="iconfont icon-tubiao102"></i>
-          </div>
-        </div>
+        <ScrollLink />
       </nav>
 
     )
