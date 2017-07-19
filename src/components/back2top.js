@@ -36,7 +36,6 @@ class ScrollLink extends Component {
 	};
 
 	render() {
-		// const styles = require('./index.scss');
 
 		return (
 			<a
