@@ -467,6 +467,28 @@ body {
   font-size: 0.512rem;
   color: #ccc;
 }
+.App .back-to-top {
+  position: fixed;
+  z-index: 400;
+  bottom: 0;
+  right: 0;
+  padding: 0.42667rem;
+  -webkit-transition: 800ms all ease;
+  transition: 800ms all ease;
+}
+.App .back-to-top .circle {
+  background: rgba(0, 0, 0, 0.7);
+  width: 2.048rem;
+  height: 2.048rem;
+  line-height: 2.048rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.App .back-to-top .circle i {
+  font-size: 1.19467rem;
+}
 .App .regist {
   width: 100%;
   background-color: #f6f6f6;

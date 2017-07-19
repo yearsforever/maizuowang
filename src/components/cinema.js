@@ -20,7 +20,7 @@ class Cinemas extends Component {
                     <div className='cinema-detail' >
                       <div className="cinema-name"> {i.name} <span className="zuo">座</span> <span className="tong">通</span> </div>
                       <div className="jiantou">
-                         <i className="iconfont icon-youjiantou"></i> 
+                        <i className="iconfont icon-youjiantou"></i>
                       </div>
                       <div className="youhui">
                         <span className='kele' >可乐爆米花</span>
@@ -35,6 +35,11 @@ class Cinemas extends Component {
             })
           }
         </Accordion>
+        <div className="back-to-top">
+          <div className="circle">
+            <i className="iconfont icon-tubiao102"></i>
+          </div>
+        </div>
       </div>
     );
   }
@@ -55,8 +60,10 @@ class Cinemas extends Component {
         var json = {};
         for (var i = 0; i < local.length; i++) {
           if (!json[local[i]]) {
-            cinemaName.push({ name: local[i] ,
-            list: [] });
+            cinemaName.push({
+              name: local[i],
+              list: []
+            });
             json[local[i]] = 1;
           }
         }
@@ -64,11 +71,11 @@ class Cinemas extends Component {
       }
       //添加电影院数据
       list.map((item) => {
-        name.map( (obj) => {
-          if (item.district.name==obj.name) {
+        name.map((obj) => {
+          if (item.district.name == obj.name) {
             obj.list.push(item);
           }
-        } )
+        })
       })
       this.props.addcinema(name);
     })

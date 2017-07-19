@@ -14,6 +14,7 @@ class Navs extends Component {
   render() {
     return (
       <nav>
+        {/* 轮播图的数据 */}
         <div className="swiper-container swiper-box">
           <div className="swiper-wrapper">
             {this.props.lunbo ?
@@ -26,6 +27,7 @@ class Navs extends Component {
           </div>
         </div>
         <div className="movie">
+          {/* 正在热映的数据 */}
           <ul className='nowplaying' >
             {this.props.nowplaying ?
               this.props.nowplaying.map((item, index) => {
@@ -62,6 +64,7 @@ class Navs extends Component {
             }
 
           </ul>
+          {/* 热映电影点击链接 */}
           <div className="more-button">
             <NavLink to='/film/1' >更多热映电影</NavLink>
           </div>
@@ -69,6 +72,7 @@ class Navs extends Component {
             <div className="line"></div>
             <div className="upcoming">即将上映</div>
           </div>
+          {/* 即将上映的数据 */}
           <ul className="comingsoon">
             {this.props.comingsoon ?
               this.props.comingsoon.map((item, index) => {
@@ -95,12 +99,19 @@ class Navs extends Component {
               }) : ''
             }
           </ul>
+          {/* 上映电影点击链接 */}
           <div className="more-button">
             <NavLink to='/film/2' >更多即将上映电影</NavLink>
           </div>
         </div>
-
+        {/* 回到顶部链接 */}
+        <div className="back-to-top">
+          <div className="circle">
+            <i className="iconfont icon-tubiao102"></i>
+          </div>
+        </div>
       </nav>
+
     )
   }
   componentDidUpdate() {

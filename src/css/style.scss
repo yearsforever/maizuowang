@@ -505,6 +505,27 @@ body{
             }
         }
     }
+    .back-to-top{
+        position: fixed;
+        z-index: 400;
+        bottom: 0;
+        right: 0;
+        padding: px2rem(10);
+        transition: 800ms all ease;
+        .circle{
+            background: rgba(0, 0, 0, .7);
+            width: px2rem(48);
+            height: px2rem(48);
+            line-height: px2rem(48);
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+            i{
+                font-size: px2rem(28);
+            }
+        }
+    }
     .regist{
         width: 100%;
         background-color: #f6f6f6;
@@ -560,4 +581,5 @@ body{
             }
         }
     }
+    
 }
