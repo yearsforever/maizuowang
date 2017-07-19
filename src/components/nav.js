@@ -18,7 +18,6 @@ class Navs extends Component {
           <div className="swiper-wrapper">
             {this.props.lunbo ?
               this.props.lunbo.map((item, index) => {
-
                 return (<div key={index} className="swiper-slide">
                   <img src={item.imageUrl} alt="" />
                 </div>)
@@ -58,10 +57,14 @@ class Navs extends Component {
                   </NavLink>
                 )
               }) : ''}
+            {
+
+            }
+
           </ul>
           <div className="more-button">
             <NavLink to='/film/1' >更多热映电影</NavLink>
-            </div>
+          </div>
           <div className="dividing-line">
             <div className="line"></div>
             <div className="upcoming">即将上映</div>
@@ -94,7 +97,7 @@ class Navs extends Component {
           </ul>
           <div className="more-button">
             <NavLink to='/film/2' >更多即将上映电影</NavLink>
-            </div>
+          </div>
         </div>
 
       </nav>
@@ -106,7 +109,7 @@ class Navs extends Component {
   }
   componentDidMount() {
     //轮播图的js
-    // mySwiper = new Swiper('.swiper-container', {
+    // var mySwiper = new Swiper('.swiper-container', {
     //   loop: true,
     //   autoplay: 5000
     // })

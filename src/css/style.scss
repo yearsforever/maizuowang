@@ -142,7 +142,6 @@ body{
             .nowplaying{
                 padding-top: px2rem(18);
                 li{
-                    // box-sizing: border-box;
                     cursor: pointer;
                     margin: 0 px2rem(17) px2rem(17) px2rem(17);
                     >div{
@@ -455,8 +454,6 @@ body{
                                         }
                                     }
                                     .youhui{
-                                        // display: inline-block;
-                                        // width: 80%;
                                         margin-bottom: px2rem(5);
                                         font-size: px2rem(12);
                                         span{

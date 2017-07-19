@@ -38,7 +38,7 @@ var state = {
             },
         ]
     },
-    filmdetail: {},
+    filmdetail: [],
     localtion: [
     //     {
     //     name: '宝安区',

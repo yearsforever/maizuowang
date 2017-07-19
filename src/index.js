@@ -11,10 +11,6 @@ import './lib/hotcss';
 //引入 子组件的样式文件
 import './css/style.css';
 
-// import $ from 'jquery';
-// //引入  swiper
-// import './lib/swiper-3.4.2.min.css';
-// import './lib/swiper-3.4.2.jquery.min';
 
 //引入 store 数据
 import store from './redux/store';
