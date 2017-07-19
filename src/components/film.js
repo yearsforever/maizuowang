@@ -7,13 +7,13 @@ import { Tabs, WhiteSpace } from 'antd-mobile';
 // 引入组件
 import Nowplay from './films/nowplaying';
 import Coming from './films/comingsoon';
+import ScrollLink from './back2top';
 
 const TabPane = Tabs.TabPane;
 
 class TabExample extends Component {
 
     render() {
-        // console.log(this.props.page)
         var page = this.props.page ? this.props.page : '1';
         return (
             <div id='tablist' >
@@ -31,18 +31,16 @@ class TabExample extends Component {
                         <i className="iconfont icon-tubiao102"></i>
                     </div>
                 </div>
+                <ScrollLink />
             </div>
         )
 
     }
-    click() {
-        console.log(11111);
-    }
+
     componentDidMount() {
         this.props.changepage(this.props.match.params.page);
     }
     componentDidUpdate() {
-        // console.log(456);
         this.props.reload();
     }
 };
@@ -53,7 +51,6 @@ const Film = connect((state, own) => {
     }
 }, {
         changepage(page) {
-            // console.log(page);
             return {
                 type: 'CHANGE_PAGE',
                 page: page
