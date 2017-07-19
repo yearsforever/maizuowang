@@ -15,7 +15,7 @@ class App1 extends React.Component {
     }
     render() {
         var that = this;
-        console.log(this)
+        // console.log(this)
         const sidebar = (<List>
              {this.props.header.list.map((i, index) => {
                 return (
