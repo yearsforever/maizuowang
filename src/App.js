@@ -20,7 +20,8 @@ class Apps extends Component {
                 <div className="App">
                      <Header />      
                      <Route exact path="/" component={Nav} />
-                     <Route  path='/film/:page' component={Film} />  
+                     <Route  path='/film/now/' component={Film} />
+                     <Route  path='/film/com/' component={Film} /> 
                      <Route  path='/cinema/' component={Cinema} />
                      <Route  path='/mine/' component={Mine} />
                      <Route  path="/film_detail/:id" component={Film_detail} /> 

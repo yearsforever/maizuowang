@@ -14,7 +14,7 @@ var state = {
             },
             {
                 name: '影片',
-                url: '/film/1'
+                url: '/film/now'
             },
             {
                 name: '影院',

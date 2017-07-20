@@ -14,19 +14,17 @@ const TabPane = Tabs.TabPane;
 class TabExample extends Component {
 
     render() {
-        var page = this.props.page ? this.props.page : '1';
+        var page = this.props.page ? this.props.page : 'now';
         return (
             <div id='tablist' >
-                <Tabs activeKey={page} defaultActiveKey='1' animated={false} swipeable >
-                    <TabPane tab="正在热映" key="1" >
-                        <Route path='/film/' component={Nowplay} ></Route>
-                    </TabPane>
-                    <TabPane tab="即将上映" key="2">
-                        <Route path='/film/2' component={Coming} ></Route>
-                    </TabPane>
-                </Tabs>
-                <WhiteSpace />
-               
+                <div className="am-tabs-top">
+                    <NavLink to='/film/now/' activeClassName='active-click' ><span className='nowplay' >正在热映</span></NavLink>
+                    <NavLink to='/film/com/' activeClassName='active-click' ><span className='comesoon' >即将上映</span></NavLink>
+                </div>
+                <Route path={'/film/now/'} component={Nowplay} ></Route>
+
+                <Route path={'/film/com/'} component={Coming} ></Route>
+
                 <ScrollLink />
             </div>
         )
@@ -34,7 +32,7 @@ class TabExample extends Component {
     }
 
     componentDidMount() {
-        this.props.changepage(this.props.match.params.page);
+        this.props.changepage(this.props.match.params.name);
     }
     componentDidUpdate() {
         this.props.reload();
@@ -46,10 +44,10 @@ const Film = connect((state, own) => {
         page: state.changepage
     }
 }, {
-        changepage(page) {
+        changepage(name) {
             return {
                 type: 'CHANGE_PAGE',
-                page: page
+                page: name
             }
         },
         reload() {

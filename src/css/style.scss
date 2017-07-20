@@ -19,7 +19,8 @@ body{
     color: #333;
 }
 .my-drawer {
-    top: px2rem(50);
+  display: none;
+  top: px2rem(50);
   position: absolute;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -288,22 +289,43 @@ body{
         background-color: #f9f9f9;
         .am-tabs-top{
             width: 100%;
-            .am-tabs-bar{
-                .am-tabs-ink-bar{
-                    height: px2rem(4);
-                    background-color: #fe6e00;
-                }
-                .am-tabs-tab{
-                    height: px2rem(45);
-                    line-height: px2rem(45);
-                    font-size: px2rem(16);
-                    color: #616161;
-                }
-                .am-tabs-tab-active{
-                    color: #fe6e00;
-                }
+            a{
+                text-align: center;
+                display: inline-block;
+                box-sizing: border-box;
+                width: 50%;
+                line-height: px2rem(46);
+                height: px2rem(46);
+                font-size: px2rem(16);
+                cursor: pointer;
+                color: #6a6a6a;
+                border-bottom: px2rem(1) solid #fe6e00;
             }
-            .nowPlay{
+            .active-click{
+                color:#fe6e00;
+                border-bottom:px2rem(4) solid #fe6e00;
+            }
+            .nowplay{
+
+            }
+            .comesoon{
+
+            }
+                // .am-tabs-ink-bar{
+                //     height: px2rem(4);
+                //     background-color: #fe6e00;
+                // }
+                // .am-tabs-tab{
+                //     height: px2rem(45);
+                //     line-height: px2rem(45);
+                //     font-size: px2rem(16);
+                //     color: #616161;
+                // }
+                // .am-tabs-tab-active{
+                //     color: #fe6e00;
+                // }
+        }
+        .nowPlay{
                 li{
                     .film-item{
                         div{
@@ -363,7 +385,6 @@ body{
                     }
                 }
             }
-        }
     }
     .film-detail{
         .film-img{

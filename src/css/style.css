@@ -24,6 +24,7 @@ body {
 }
 
 .my-drawer {
+  display: none;
   top: 2.13333rem;
   position: absolute;
   overflow: auto;
@@ -279,38 +280,42 @@ body {
 .App #tablist .am-tabs-top {
   width: 100%;
 }
-.App #tablist .am-tabs-top .am-tabs-bar .am-tabs-ink-bar {
-  height: 0.17067rem;
-  background-color: #fe6e00;
-}
-.App #tablist .am-tabs-top .am-tabs-bar .am-tabs-tab {
-  height: 1.92rem;
-  line-height: 1.92rem;
+.App #tablist .am-tabs-top a {
+  text-align: center;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  line-height: 1.96267rem;
+  height: 1.96267rem;
   font-size: 0.68267rem;
-  color: #616161;
+  cursor: pointer;
+  color: #6a6a6a;
+  border-bottom: 0.04267rem solid #fe6e00;
 }
-.App #tablist .am-tabs-top .am-tabs-bar .am-tabs-tab-active {
+.App #tablist .am-tabs-top .active-click {
   color: #fe6e00;
+  border-bottom: 0.17067rem solid #fe6e00;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item {
+.App #tablist .nowPlay li .film-item {
   width: 100%;
   padding: 0.85333rem 0;
   border-bottom: dashed 0.04267rem #c9c9c9;
   cursor: pointer;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item div {
+.App #tablist .nowPlay li .film-item div {
   display: inline-block;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-img img {
+.App #tablist .nowPlay li .film-item .item-img img {
   width: 2.56rem;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc {
+.App #tablist .nowPlay li .film-item .item-desc {
   padding-left: 0.64rem;
   width: 75%;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-name {
+.App #tablist .nowPlay li .film-item .item-desc .film-name {
   font-size: 0.68267rem;
   line-height: 1.36533rem;
   color: #000;
@@ -319,30 +324,30 @@ body {
   white-space: nowrap;
   width: 80%;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-grade {
+.App #tablist .nowPlay li .film-item .item-desc .film-grade {
   line-height: 1.36533rem;
   font-size: 0.68267rem;
   color: #fe6e00;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-grade span {
+.App #tablist .nowPlay li .film-item .item-desc .film-grade span {
   color: #8e8e8e;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-intro {
+.App #tablist .nowPlay li .film-item .item-desc .film-intro {
   line-height: 1.024rem;
   height: 1.024rem;
   color: #8e8e8e;
   font-size: 0.512rem;
   width: 100%;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-counts {
+.App #tablist .nowPlay li .film-item .item-desc .film-counts {
   font-size: 0.512rem;
   color: #8e8e8e;
   line-height: 1.024rem;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-counts .font-color {
+.App #tablist .nowPlay li .film-item .item-desc .film-counts .font-color {
   color: blue;
 }
-.App #tablist .am-tabs-top .nowPlay li .film-item .item-desc .film-date {
+.App #tablist .nowPlay li .film-item .item-desc .film-date {
   color: #ffb375;
   font-size: 0.512rem;
   line-height: 1.024rem;
