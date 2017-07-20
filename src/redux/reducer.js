@@ -8,9 +8,6 @@ function reducer(state, action) {
         case 'CHANGE_NAV':
             return Object.assign({}, state, {
                 lunbo: action.lunbo,
-                // header: {
-                //     title: 'adfsfasdf'
-                // }
             });
         //  首页正在热映的数据
         case 'CHANGE_NOW':
@@ -48,6 +45,9 @@ function reducer(state, action) {
             return Object.assign({}, state, {
                 addcinema: action.cinema
             });
+        // test 测试方法
+        case 'test':
+            return "哈哈啊哈哈";
         default:
             return state;
     }

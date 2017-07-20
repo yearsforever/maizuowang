@@ -19,7 +19,7 @@ body{
     color: #333;
 }
 .my-drawer {
-  display: none;
+//   display: none;
   top: px2rem(50);
   position: absolute;
   overflow: auto;
@@ -29,10 +29,19 @@ body{
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+.margin-top{
+    margin-top: px2rem(-21);
+}
 
 .App{
     .chouti{
+        // position: fixed;
+        width: 100%;
+        height: px2rem(50);
         .am-navbar{
+            position: fixed;
+            top: 0;
+            z-index: 10;
             width: 100%;
             height: px2rem(50);
             background-color: #282828;
@@ -90,8 +99,10 @@ body{
             }
         }
         .my-drawer{
-            
+            z-index: 10;
+            position: fixed;
             .am-drawer-sidebar{
+                z-index: 3;
                 width: 70%;
                 line-height: px2rem(50);
                 background-color: #282828;
@@ -128,15 +139,23 @@ body{
                                 }
                         }
                     }
+                    .am-list-body::after{
+                        border-bottom: 0;
+                    }
                 }
             }
+            .am-drawer-overlay{
+                z-index: 2;
+                position: fixed;
+            }
             .am-drawer-content{
-                display: none;
+                padding: 0;
             }
         }
     }
     nav{
-        z-index: 100;
+       
+        // z-index: 100;
         .swiper-box{
             width: 100%;
             height: px2rem(210);
@@ -161,11 +180,12 @@ body{
                         .desc{
                             height: px2rem(50);
                             .desc-left{
-                                width: 83%;
+                                // width: 83%;
                                 box-sizing: border-box;
                                 height: px2rem(50);
                                 padding: px2rem(13) 0 0 px2rem(28);
                                 .file-name{
+                                    text-align: left;
                                     color: #9a9a9a;
                                     font-size: px2rem(12);
                                     line-height: px2rem(15);
@@ -257,6 +277,7 @@ body{
                             padding-left: px2rem(28);
                             width: 58%;
                             .file-name{
+                                text-align: left;
                                 color: #333;
                                 font-size: px2rem(12);
                                 line-height: px2rem(15);
@@ -283,6 +304,7 @@ body{
         
     }
     #tablist{
+        // margin-top: px2rem(-21);
         box-sizing: border-box;
         padding-left: px2rem(15);
         padding-right: px2rem(15);
@@ -309,6 +331,7 @@ body{
         .nowPlay{
                 li{
                     .film-item{
+                        text-align: left;
                         div{
                             display: inline-block;
                         }
@@ -368,6 +391,7 @@ body{
             }
     }
     .film-detail{
+        // margin-top: px2rem(-21);
         .film-img{
             img{
                 width: 100%;
@@ -402,9 +426,11 @@ body{
         }
     }
     .cinemas{
+        // margin-top: px2rem(-21);
         .am-accordion-item{
             cursor: pointer;
             .am-accordion-header{
+                text-align: left;
                 font-size: px2rem(14);
                 padding-left: px2rem(14);
                 background: #e1e1e1;
@@ -522,6 +548,7 @@ body{
         }
     }
     .regist{
+        // margin-top: px2rem(-21);
         width: 100%;
         background-color: #f6f6f6;
         .regist-box{
@@ -552,8 +579,48 @@ body{
                         border-width: 0 px2rem(1) px2rem(1) px2rem(1);
                     }
                 }
+                .username{
+                    position: relative;
+                    .yanzheng{
+                        font-size: px2rem(12);
+                        width: px2rem(95);
+                        position: absolute;
+                        right: px2rem(5);
+                        top: px2rem(-5);
+                        background-color: #29a097;
+                        color: #fff;
+                        height: px2rem(30);
+                        line-height: px2rem(30);
+                        text-align: center;
+                        border-radius: px2rem(3);
+                        cursor: pointer;
+                    }
+                    .jianjiao{
+                        left: px2rem(-6);
+                        position: absolute;
+                        top: px2rem(8);
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: solid px2rem(6) transparent;
+                        border-bottom: solid px2rem(6) transparent;
+                        border-right: solid px2rem(6) #29a097;
+                        display: block;
+                    }
+                }
                 .loginview{
-                    display: none;
+                    text-align: left;
+                    // display: none;
+                    .inpview{
+                        vertical-align: top;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        width: 67%;
+                    }
+                    img{
+                        width: px2rem(100);
+                        height: px2rem(30);
+                    }
                 }
                 .wrong-msg{
                     font-size: px2rem(14);
@@ -572,6 +639,67 @@ body{
                     border-radius: px2rem(36);
                     padding: px2rem(8) px2rem(12);
                     font-size: px2rem(15);
+                }
+            }
+        }
+    }
+    .mine{
+        // margin-top: px2rem(-21);
+        .mine-head{
+            text-align: left;
+            background-color: #333;
+            header{
+                padding: px2rem(36) px2rem(12) px2rem(24) 10%;
+                img{
+                    width: px2rem(92);
+                    height: px2rem(92);
+                    border-radius: 50%;
+                    margin-right: px2rem(14);
+                    display: inline-block;
+                }
+                .details{
+                    display: inline-block;
+                    margin-top: px2rem(16);
+                    vertical-align: top;
+                    p{
+                        font-size: px2rem(14);
+                        line-height: px2rem(19);
+                        margin-bottom: px2rem(2);
+                    }
+                }
+            }
+        }
+        section{
+            .menu-wrapper{
+                width: 100%;
+                text-align: left;
+                margin: px2rem(14) 0;
+                line-height: px2rem(59);
+                background-color: #fff;
+                font-size: px2rem(12);
+                color: #222;
+                .menu{
+                    margin: 0 px2rem(12);
+                    .icon-wode{
+                        font-size: px2rem(16);
+                    }
+                    .title{
+                        margin-left: px2rem(9);
+                        line-height: px2rem(35);
+                        vertical-align: inherit;
+                    }
+                    .pull-right{
+                        .value{
+                            color: #e7a858;
+                        }
+                    }
+                }
+            }
+            .zhongjian{
+                margin: 0;
+                .middle{
+                    border-top: px2rem(1) solid #999;
+                    border-bottom: px2rem(1) solid #999;
                 }
             }
         }

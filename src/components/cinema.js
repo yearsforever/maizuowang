@@ -10,7 +10,7 @@ import ScrollLink from './back2top';
 class Cinemas extends Component {
   render() {
     return (
-      <div className='cinemas' >
+      <div className='cinemas margin-top' >
         <Accordion accordion openAnimation={{}} className="my-accordion" >
           {
             this.props.cinemas.map((item, index) => {

@@ -16,7 +16,7 @@ class TabExample extends Component {
     render() {
         var page = this.props.page ? this.props.page : 'now';
         return (
-            <div id='tablist' >
+            <div id='tablist' className='margin-top' >
                 <div className="am-tabs-top">
                     <NavLink to='/film/now/' activeClassName='active-click' ><span className='nowplay' >正在热映</span></NavLink>
                     <NavLink to='/film/com/' activeClassName='active-click' ><span className='comesoon' >即将上映</span></NavLink>

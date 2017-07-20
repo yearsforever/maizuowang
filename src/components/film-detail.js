@@ -7,7 +7,7 @@ class Film_details extends Component {
   render() {
     var url = this.props.film.cover ? this.props.film.cover.origin : '';
     return (
-      <section className='film-detail' >
+      <section className='film-detail margin-top' >
 
         <div className="film-img">
           <img src={url} alt="" />

@@ -24,7 +24,6 @@ body {
 }
 
 .my-drawer {
-  display: none;
   top: 2.13333rem;
   position: absolute;
   overflow: auto;
@@ -36,7 +35,18 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+.margin-top {
+  margin-top: -0.896rem;
+}
+
+.App .chouti {
+  width: 100%;
+  height: 2.13333rem;
+}
 .App .chouti .am-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
   width: 100%;
   height: 2.13333rem;
   background-color: #282828;
@@ -86,7 +96,12 @@ body {
   color: #999;
   font-size: 0.68267rem;
 }
+.App .chouti .my-drawer {
+  z-index: 10;
+  position: fixed;
+}
 .App .chouti .my-drawer .am-drawer-sidebar {
+  z-index: 3;
   width: 70%;
   line-height: 2.13333rem;
   background-color: #282828;
@@ -124,11 +139,15 @@ body {
   font-size: 0.59733rem;
   color: #9a9a9a;
 }
-.App .chouti .my-drawer .am-drawer-content {
-  display: none;
+.App .chouti .my-drawer .am-drawer-sidebar .am-list .am-list-body::after {
+  border-bottom: 0;
 }
-.App nav {
-  z-index: 100;
+.App .chouti .my-drawer .am-drawer-overlay {
+  z-index: 2;
+  position: fixed;
+}
+.App .chouti .my-drawer .am-drawer-content {
+  padding: 0;
 }
 .App nav .swiper-box {
   width: 100%;
@@ -155,13 +174,13 @@ body {
   height: 2.13333rem;
 }
 .App nav .movie .nowplaying li > div .desc .desc-left {
-  width: 83%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 2.13333rem;
   padding: 0.55467rem 0 0 1.19467rem;
 }
 .App nav .movie .nowplaying li > div .desc .desc-left .file-name {
+  text-align: left;
   color: #9a9a9a;
   font-size: 0.512rem;
   line-height: 0.64rem;
@@ -251,6 +270,7 @@ body {
   width: 58%;
 }
 .App nav .movie .comingsoon li .detail .de-left .file-name {
+  text-align: left;
   color: #333;
   font-size: 0.512rem;
   line-height: 0.64rem;
@@ -298,6 +318,7 @@ body {
   border-bottom: 0.17067rem solid #fe6e00;
 }
 .App #tablist .nowPlay li .film-item {
+  text-align: left;
   width: 100%;
   padding: 0.85333rem 0;
   border-bottom: dashed 0.04267rem #c9c9c9;
@@ -386,6 +407,7 @@ body {
   cursor: pointer;
 }
 .App .cinemas .am-accordion-item .am-accordion-header {
+  text-align: left;
   font-size: 0.59733rem;
   padding-left: 0.59733rem;
   background: #e1e1e1;
@@ -529,8 +551,48 @@ body {
   border: solid #c4c4c4;
   border-width: 0 0.04267rem 0.04267rem 0.04267rem;
 }
+.App .regist .regist-box form .username {
+  position: relative;
+}
+.App .regist .regist-box form .username .yanzheng {
+  font-size: 0.512rem;
+  width: 4.05333rem;
+  position: absolute;
+  right: 0.21333rem;
+  top: -0.21333rem;
+  background-color: #29a097;
+  color: #fff;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  text-align: center;
+  border-radius: 0.128rem;
+  cursor: pointer;
+}
+.App .regist .regist-box form .username .jianjiao {
+  left: -0.256rem;
+  position: absolute;
+  top: 0.34133rem;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: solid 0.256rem transparent;
+  border-bottom: solid 0.256rem transparent;
+  border-right: solid 0.256rem #29a097;
+  display: block;
+}
 .App .regist .regist-box form .loginview {
-  display: none;
+  text-align: left;
+}
+.App .regist .regist-box form .loginview .inpview {
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: 67%;
+}
+.App .regist .regist-box form .loginview img {
+  width: 4.26667rem;
+  height: 1.28rem;
 }
 .App .regist .regist-box form .wrong-msg {
   font-size: 0.59733rem;
@@ -549,4 +611,58 @@ body {
   border-radius: 1.536rem;
   padding: 0.34133rem 0.512rem;
   font-size: 0.64rem;
+}
+.App .mine .mine-head {
+  text-align: left;
+  background-color: #333;
+}
+.App .mine .mine-head header {
+  padding: 1.536rem 0.512rem 1.024rem 10%;
+}
+.App .mine .mine-head header img {
+  width: 3.92533rem;
+  height: 3.92533rem;
+  border-radius: 50%;
+  margin-right: 0.59733rem;
+  display: inline-block;
+}
+.App .mine .mine-head header .details {
+  display: inline-block;
+  margin-top: 0.68267rem;
+  vertical-align: top;
+}
+.App .mine .mine-head header .details p {
+  font-size: 0.59733rem;
+  line-height: 0.81067rem;
+  margin-bottom: 0.08533rem;
+}
+.App .mine section .menu-wrapper {
+  width: 100%;
+  text-align: left;
+  margin: 0.59733rem 0;
+  line-height: 2.51733rem;
+  background-color: #fff;
+  font-size: 0.512rem;
+  color: #222;
+}
+.App .mine section .menu-wrapper .menu {
+  margin: 0 0.512rem;
+}
+.App .mine section .menu-wrapper .menu .icon-wode {
+  font-size: 0.68267rem;
+}
+.App .mine section .menu-wrapper .menu .title {
+  margin-left: 0.384rem;
+  line-height: 1.49333rem;
+  vertical-align: inherit;
+}
+.App .mine section .menu-wrapper .menu .pull-right .value {
+  color: #e7a858;
+}
+.App .mine section .zhongjian {
+  margin: 0;
+}
+.App .mine section .zhongjian .middle {
+  border-top: 0.04267rem solid #999;
+  border-bottom: 0.04267rem solid #999;
 }

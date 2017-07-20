@@ -14,7 +14,7 @@ var mySwiper;
 class Navs extends Component {
   render() {
     return (
-      <nav>
+      <nav className='margin-top' >
         {/* 轮播图的数据 */}
         <div className="swiper-container swiper-box">
           <div className="swiper-wrapper">

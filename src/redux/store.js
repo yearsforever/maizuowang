@@ -30,7 +30,7 @@ var state = {
             },
             {
                 name: '我的',
-                url: '/mine/'
+                url: '/regist/'
             },
             {
                 name: '卖座卡',
@@ -45,9 +45,5 @@ var state = {
 
 //创建 store 
 var store = createStore(reducer, state);
-//新增一个原型方法传出去
-// store.createAction = function (action) {
-//     store.dispatch(action);
-// }
 
 export default store;
