@@ -19,7 +19,6 @@ body{
     color: #333;
 }
 .my-drawer {
-//   display: none;
   top: px2rem(50);
   position: absolute;
   overflow: auto;
@@ -28,9 +27,6 @@ body{
 .my-drawer .am-drawer-sidebar {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
-.margin-top{
-    margin-top: px2rem(-21);
 }
 
 .App{
@@ -548,7 +544,6 @@ body{
         }
     }
     .regist{
-        // margin-top: px2rem(-21);
         width: 100%;
         background-color: #f6f6f6;
         .regist-box{
@@ -582,6 +577,7 @@ body{
                 .username{
                     position: relative;
                     .yanzheng{
+                        display: none;
                         font-size: px2rem(12);
                         width: px2rem(95);
                         position: absolute;

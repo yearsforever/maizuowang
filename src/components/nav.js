@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 //引入 react-redux
 import { connect } from 'react-redux';
-import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import $ from 'jquery';
 //引入  swiper
 import '../lib/swiper-3.4.2.min.css';
 import ScrollLink from './back2top';
 import Swiper from 'swiper';
-
-var mySwiper;
 
 class Navs extends Component {
   render() {
@@ -32,7 +30,6 @@ class Navs extends Component {
           <ul className='nowplaying' >
             {this.props.nowplaying ?
               this.props.nowplaying.map((item, index) => {
-                {/* console.log(item.id);   */ }
                 var id = '/film_detail/' + item.id;
                 return (
                   <NavLink to={id} key={index} >
@@ -67,7 +64,7 @@ class Navs extends Component {
           </ul>
           {/* 热映电影点击链接 */}
           <div className="more-button">
-            <NavLink to='/film/1' >更多热映电影</NavLink>
+            <NavLink to='/film/now' >更多热映电影</NavLink>
           </div>
           <div className="dividing-line">
             <div className="line"></div>
@@ -102,7 +99,7 @@ class Navs extends Component {
           </ul>
           {/* 上映电影点击链接 */}
           <div className="more-button">
-            <NavLink to='/film/2' >更多即将上映电影</NavLink>
+            <NavLink to='/film/com' >更多即将上映电影</NavLink>
           </div>
         </div>
         {/* 回到顶部链接 */}
@@ -129,7 +126,7 @@ class Navs extends Component {
       var navList = JSON.parse(data).data.billboards;
       that.props.getLunbo(navList);
 
-      mySwiper = new Swiper('.swiper-container', {
+      var mySwiper = new Swiper('.swiper-container', {
         loop: true,
         autoplay: 5000
       })

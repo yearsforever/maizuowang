@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 //引入 react-redux
 import { connect } from 'react-redux';
-import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
-
-import $ from 'jquery';
+import { HashRouter as Router } from 'react-router-dom';
 
 //引入各个子组件
 import Header from './components/Header';
-import Nav from './components/nav';
-import Film from './components/film';
-import Film_detail from './components/film-detail';
-import Cinema from './components/cinema';
-import Regist from './components/regist';
-import Mine from './components/mine';
+// import Nav from './components/nav';
+// import Film from './components/film';
+// import Film_detail from './components/film-detail';
+// import Cinema from './components/cinema';
+// import Regist from './components/regist';
+// import Mine from './components/mine';
 
 class Apps extends Component {
     render() {

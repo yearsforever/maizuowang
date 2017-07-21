@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import $ from 'jquery';
-import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
+// import $ from 'jquery';
+// import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 
 import '../lib/iconfont/iconfont.css';
 

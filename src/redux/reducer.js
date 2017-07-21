@@ -1,5 +1,3 @@
-//引入  jquery
-import $ from 'jquery';
 
 function reducer(state, action) {
 
@@ -45,9 +43,11 @@ function reducer(state, action) {
             return Object.assign({}, state, {
                 addcinema: action.cinema
             });
-        // test 测试方法
-        case 'test':
-            return "哈哈啊哈哈";
+        // 注册登录
+        case 'CHANGE_REG':
+            return Object.assign({}, state, {
+                regist: action.data
+            });
         default:
             return state;
     }

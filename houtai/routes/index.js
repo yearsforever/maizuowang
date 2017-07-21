@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var http = require('http');
+var MgC = require('mongodb').MongoClient;
+var CONN_STR = 'mongodb://127.0.0.1:27017/client';
 
 router.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -9,6 +11,28 @@ router.all('*', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
+
+//登录注册验证
+router.get('/reg',function(req, res) {
+  var user = req.query.user;
+  var pwd = req.query.pwd;
+  console.log(pwd);
+
+  MgC.connect(CONN_STR,function(err, db) {
+    if (err) {
+      console.log(err)
+    }else{
+      var coll = db.collection('yangzhiwensb');
+      coll.save(req.query,function(err, res) {
+        if (err) {
+          console.log(err);
+          return;
+        }
+        db.close();
+      })
+    }
+  } )
+})
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -78,7 +102,6 @@ router.get('/comingSoon', function(req, res) {
 
 // film-detail 页面数据
 router.get('/film',function(req, res) {
-  //http://m.maizuo.com/v4/api/film/3071?__t=1500264869976
   var id = req.query.id;
   // console.log(id);
   var time = new Date().getTime();
@@ -115,5 +138,7 @@ router.get('/cinema',function(req, res) {
     })
   })
 })
+
+
 
 module.exports = router;

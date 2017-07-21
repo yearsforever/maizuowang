@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router , Route , NavLink } from 'react-router-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 //引入 raect-redux
@@ -25,7 +24,6 @@ registerServiceWorker();
 function render () {
     ReactDOM.render(
     <Provider store={store} >
-        
             <App action= {store.createAction} state= {store.getState()} />
     </Provider>, 
     document.getElementById('root'));

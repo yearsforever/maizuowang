@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 
-import { Icon, Drawer, List, NavBar } from 'antd-mobile';
+import { Drawer, List, NavBar } from 'antd-mobile';
 import Nav from './nav';
 import Film from './film';
 import Film_detail from './film-detail';
@@ -11,7 +11,7 @@ import Cinema from './cinema';
 import Regist from './regist';
 import Mine from './mine';
 
-class App1 extends React.Component {
+class App1 extends Component {
     state = {
         open: false,
     }
@@ -19,8 +19,6 @@ class App1 extends React.Component {
         this.setState({ open: !this.state.open });
     }
     render() {
-        var that = this;
-        // console.log(this)
         const sidebar = (<List>
             {this.props.header.list.map((i, index) => {
                 return (
@@ -51,7 +49,7 @@ class App1 extends React.Component {
                     <Drawer
                         className="my-drawer"
                         style={{ minHeight: document.documentElement.clientHeight - 200 }}
-                        contentStyle={{ color: '#A6A6A6', textAlign: 'center', paddingTop: 42 }}
+                        contentStyle={{ color: '#A6A6A6'}}
                         sidebar={sidebar}
                         open={this.state.open}
                         onOpenChange={this.onOpenChange} >
